@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Cadastr de Aluno</title>
+	
+	<link href="css/estilo.css" rel="stylesheet">
+	
+</head>
+<body>
+
+	<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" >
+
+		<br>
+		<br><br>
+		<h1 align="justify">Cadastro de alunos</h1>
+			
+			
+				 Crie um nome de usuário:<br>
+				  <input type="text" name="usuario" placeholder="Digite o user"><br>
+				  Digite uma senha:<br>
+				  <input type="password" name="psw" placeholder= " Digite aqui uma senha">
+
+				<p class="borda">Nome do aluno:
+				<input type="text" name="nome" placeholder="Digite aqui o seu Nome">
+				
+				<p>Endereço:
+				<input type="text" name="endereco" placeholder="Digite aqui o endereço">
+				
+				  <p>Escolha a cidade:
+				 <select>
+				  <option value="Hortlândia">Hortolândia</option>
+				  <option value="Sumaré">Sumaré</option>
+				  <option value="Campinas">Campinas</option>
+				  <option value="Capivari">Capivari</option>
+				</select> 
+
+				<p>Data de nascimento:
+				<input type="date" name="nascimento" placeholder="Digite aqui a data de nascimento">
+		    <br>
+		    <br>
+         Selecione qual horario pretende cursar: <br>
+		<input type="radio" name="op" value="Manhã">Manhã<br>
+		<input type="radio" name="op" value="Tarde">Tarde<br>
+		<input type="radio" name="op" value="Noite">Noite<br>
+		<br>
+		<br>
+
+		Qual sua/suas área de interesse: <br>
+		<br>
+		<input type="checkbox" name="item" value="Exatas">Exatas<br>
+		<input type="checkbox" name="item" value="Humanas">Humanas<br>
+		<input type="checkbox" name="item" value="Biológicas">Biológicas<br>
+		<input type="checkbox" name="item" value="Outras">Outras
+		<input type="text" name="outras" placeholder="Especifique"> <br> 
+		<br>
+		<br>
+		
+
+ 	<fieldset>
+	    <legend>Pesquisa de opnião (não obrigatório):</legend>
+		   <p>Qual menlhor horário para o intervalo:
+			<input type="time" name="usr_time">
+            <p>Qual a sua sugestão para a cor do uniforme:
+            <input type="color" name="favcolor">
+            <p>Qual o grau de satisfação com este formulário:
+            <input type="range" name="satisfação" min="0" max="10">
+    </fieldset>	
+		
+	</form>
+
+	
+</body>
